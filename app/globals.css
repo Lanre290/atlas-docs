@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #05070a;
+  --surface: #0d1117;
+  --border: #1c2430;
+  --fg: #e6edf3;
+  --muted: #7d8998;
+  --accent: #45e0c4;
+  --accent-fg: #05070a;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+* {
+  border-color: var(--border);
+}
+
+html,
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+/* rehype-pretty-code already highlights + backgrounds block code via inline
+   styles; reset the inline-code pill styling from MdxComponents' `code`
+   override so it doesn't double up inside <pre>. */
+pre code {
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+}
+
+::selection {
+  background-color: var(--accent);
+  color: var(--accent-fg);
+}
