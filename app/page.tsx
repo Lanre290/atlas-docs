@@ -10,9 +10,9 @@ export default function Home() {
           Developer platform for space data
         </p>
         <h1 className="mb-6 text-4xl font-semibold leading-tight tracking-tight text-fg sm:text-5xl">
-          Integrate once.
+          An intelligence layer,
           <br />
-          Build forever.
+          not just an API.
         </h1>
         <p className="mb-10 max-w-xl text-lg leading-8 text-fg/80">
           Atlas is a domain-driven API that unifies official space data — NASA, JPL, Le Système
